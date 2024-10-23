@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ffc300;
+    height: 350px;
+}
+
+.navi>ul>li{
+    display: inline-flex;
+    margin:0 5px;
+}
+
+.navi>ul>li>a{    
+    color: white;
+    font-size: 28px;
+    font-family: 'Inter';  
+    background-color:blue;
+    margin: 5px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    text-decoration: none;  
+}
+
+.logo{
+    display:inline-flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    margin-left: 37%;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container{
+    background-color: aquamarine;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;   
+}   
+.container-foto{
+    width:100%;
+    position: center;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin: 10px;
+}
+.container>h1{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 34px;
+    margin: 2px;
+}
+.container p{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    
+}
+
+.content{
+    display: block;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Inter';
+    text-align:center ;
+    margin:0 8px 0 5px;
+    padding: 10px;
+}
+
+.atencion>h3{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Inter';
+    background-color: #ffc300;
+}
+.atencion table{
+    background-color:#ffc300 ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Inter';
+}
+
+.social>h4{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter';
+    
+}
+.social>ul{
+    margin-left: 570px;
+}
+
+.social>ul>li{
+    display: inline;
+       
+}
+
+.social>ul>li>a{
+    margin: 5px;
+
+}
+
+.social>p{
+    font-size: 18px;
+    font-family: 'Inter';
+    text-align: center;
+}
+/*ELABORACION*/
+main{
+    background-color:aquamarine;
+
+}
+.titulo{
+   text-align: center;
+   font-size: 34px;
+   margin-bottom: 10px;
+    
+}
+.productos-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.producto-item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.producto-item-1{
+    width: 330px;
+    height: 450px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+}
+.producto-item-2{
+    width: 330px;
+    height: 450px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+
+}
+.producto-item-3{
+    width: 330px;
+    height: 450px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+
+}
+.producto-item-4{
+    width: 330px;
+    height: 450px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+
+}
+.precio-item>span{
+    margin-right: 250px;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.cta-item>a{
+    justify-items: auto;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 150px;
+    
+}
+.cta-item :hover{
+    text-decoration: underline;
+    background-color:goldenrod;
+}
+
+    /*NEW ITEMS*/
+
+.productos-new-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+   
+}
+.producto-news-item{
+    display: inline-flex;   
+}
+/* MENU*/
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+
+.menu-card{
+    display: inline-flex;
+    margin-top: 100px;
+    gap: 0.5em;
+    justify-content: space-evenly;
+}
+
+.menu-card h5{
+    text-align: center;
+    font-size: 26px;
+}
+
+.menu-card1{ 
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    font-size: 18px;
+    font-family: 'arial';
+    border: solid;
+ 
+}
+.menu-card2{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'arial';
+    border: solid;
+}    
+.menu-card3{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'arial';
+    border: solid;
+   
+}
+.menu-card4{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'arial';
+    border: solid;
+    
+}
+/*CONTACO*/
+.contacto{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    background-image:url(../imagenes/foto_misterSabor.jpg) ;
+}
+
+main>h1{
+    text-align:center;
+    font-size: 38px;
+    font-family: 'Inter';
+    margin-bottom: 30px;
+    text-decoration: none;
+   
+    
+} 
+.contacto-form{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Inter';
+    text-decoration: none;
+}   
+
+legend{
+    font-size:26px;
+    font-family: 'Inter';
+    text-align: center; 
+}
+
+.contacto-form input{
+    display: flex;
+    font-size: 18px;
+    margin-left: 550px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    border: solid;
+    text-decoration: none;  
+}
+
+.comentar>p{
+    font-size: 28px;
+    color: black;
+    margin: 10px;
+}
+
+.comentar>textarea{
+    margin: 20px;
+    border: inherit;
+}
+.button{
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding: 3px 18px 3px 18px;
+    margin: 10px;
+}
+.button :hover{
+    text-decoration: underline;
+    background-color:goldenrod;
+}
+
+iframe{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    margin-left: 450px;
+}
+
+/*disign responsive*/
+@media (max-width:1024px){
+    .news-cards{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+@media (max-width:768px){
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width:480px){
+    .news-cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+    
+}
