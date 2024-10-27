@@ -19,9 +19,9 @@ header{
     font-size: 28px;
     font-family: 'Inter';  
     background-color:blue;
-    margin: 5px;
+    margin: 2px;
     margin-bottom: 1px;
-    margin-top: 10px;
+    margin-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -36,6 +36,7 @@ header{
     height: 300px;
     border-radius: 40%;
     margin-left: 37%;
+    margin-top: 10px;
     align-items: center;
     text-decoration: none;
 }
@@ -100,17 +101,15 @@ header{
     
 }
 .social>ul{
-    margin-left: 570px;
+    margin-left: 550px;  
 }
 
 .social>ul>li{
-    display: inline;
-       
+    display: inline;     
 }
 
 .social>ul>li>a{
-    margin: 5px;
-
+    margin: 5px; 
 }
 
 .social>p{
@@ -121,26 +120,23 @@ header{
 /*ELABORACION*/
 main{
     background-color:aquamarine;
-
 }
 .titulo{
    text-align: center;
-   font-size: 34px;
-   margin-bottom: 10px;
+   font-size: 32px;
+   margin: 10px;
     
 }
 .productos-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));   
 }
 
 .producto-item{
     display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    
+    justify-content: center;    
 }
+
 .producto-item-1{
     width: 330px;
     height: 450px;
@@ -150,6 +146,7 @@ main{
     padding: 3px;
     border: solid;
     gap: 0.5em;
+    margin: 2px;
 }
 .producto-item-2{
     width: 330px;
@@ -187,94 +184,165 @@ main{
     margin: 2px;
 
 }
-.precio-item>span{
+.producto-item-5{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+    width: 330px;
+    height: 250px;
+
+}
+.producto-item-6{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+    width: 330px;
+    height: 250px;
+
+
+
+}
+.producto-item-7{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+    width: 330px;
+    height: 250px;
+
+}
+.producto-item-8{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    border: solid;
+    gap: 0.5em;
+    margin: 2px;
+    width: 330px;
+    height: 250px;
+
+}
+.precio-item span{
+    display: inline-flex;
     margin-right: 250px;
     font-size: 22px;
+    margin-top: 10px;
     font-weight: bold;
+    justify-content: space-between;
     
 }
 .cta-item>a{
-    justify-items: auto;
+    text-align:right;
+    margin-left: 200px;
+    justify-content:space-evenly;
     font-size: 20px;
     font-family: 'Inter';
     font-weight: bold;
     text-decoration: none;
-    margin-left: 150px;
-    
+   
 }
 .cta-item :hover{
     text-decoration: underline;
     background-color:goldenrod;
 }
 
-    /*NEW ITEMS*/
-
-.productos-new-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 30px;
-   
-}
-.producto-news-item{
-    display: inline-flex;   
-}
 /* MENU*/
 .menu{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);   
+    grid-template-columns: repeat(minmax(4, 1fr));        
 }
-
+.titulo-menu{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 .menu-card{
     display: inline-flex;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
     gap: 0.5em;
     justify-content: space-evenly;
 }
 
 .menu-card h5{
     text-align: center;
-    font-size: 26px;
+    margin: 5px;
+    font-size: 28px;
 }
 
 .menu-card1{ 
     text-align: center;
     width: 300px;
     height: 400px;
-    font-size: 18px;
-    font-family: 'arial';
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: solid;
- 
+    background-color: white ;
 }
+
+.menu-lista>li{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+.menu-lista2>li{
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+    color:green;
+    text-decoration: none;
+}
+
 .menu-card2{
+    text-align: center;
     width: 300px;
     height: 400px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'arial';
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: solid;
+    text-decoration: none;
+    background-color: white ;
 }    
 .menu-card3{
+    text-align: center;
     width: 300px;
     height: 400px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'arial';
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: solid;
-   
+    text-decoration: none;
+    background-color: white ;   
 }
 .menu-card4{
+    text-align: center;
     width: 300px;
     height: 400px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'arial';
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: solid;
-    
+    text-decoration: none;
+    background-color: white ;
 }
 /*CONTACO*/
 .contacto{
-    width: 100%;
-    height: 50%;
+  
     display: grid;
     background-image:url(../imagenes/foto_misterSabor.jpg) ;
 }
@@ -284,10 +352,9 @@ main>h1{
     font-size: 38px;
     font-family: 'Inter';
     margin-bottom: 30px;
-    text-decoration: none;
-   
-    
+    text-decoration: none;   
 } 
+
 .contacto-form{
     display: block;
     text-align: center;
@@ -320,19 +387,87 @@ legend{
 
 .comentar>textarea{
     margin: 20px;
-    border: inherit;
+    border: none;
 }
-.button{
-    background-color: white;
-    text-align: center;
-    color: black;
+#contacto-button{
+    margin-left: 45%;
+    margin-bottom: 20px;
     font-size: 20px;
-    padding: 3px 18px 3px 18px;
-    margin: 10px;
+    font-family: 'Inter';
+    border-bottom-style: none;
+    padding: 5px;
+    width: 150px;
+    height: 40px;   
 }
-.button :hover{
+
+#contacto-button :hover{
     text-decoration: underline;
-    background-color:goldenrod;
+    background-color:aquamarine;
+}
+
+.reseña-grid{
+    display: grid;
+    grid-template-columns: repeat(minmax(3, 1fr)); 
+    background-color: aquamarine;
+}
+.reseña-grid>h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.reseña{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+.reseña-1>h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.reseña-2>h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.reseña-3>h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.reseña-1{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin: 40px 10px 5px 10px;
+    justify-content: space-between;
+    width: 350px;
+    height: 250px;
+    background-color: black;   
+}
+.reseña-2{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin: 40px 10px 5px 10px;
+    justify-content: space-between;
+    width: 350px;
+    height: 250px;
+    background-color: black;
+}
+.reseña-3{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin: 40px 10px 5px 10px;
+    justify-content: space-between;
+    width: 350px;
+    height: 250px;
+    background-color: black;
 }
 
 iframe{
@@ -343,27 +478,204 @@ iframe{
     margin-left: 450px;
 }
 
+
 /*disign responsive*/
 @media (max-width:1024px){
-    .news-cards{
-        grid-template-columns: repeat(3, 1fr);
+    header{
+        width: 100%;
+    }
+    .logo{
+        text-align: center;
+    }
+    .navi{
+        font-size: 70%;
+
+    }
+    .productos-grid{
+        grid-template-columns: repeat(minmax(280px, 1fr));
         margin: 0;
         padding: 0;
+        gap: 0.1em;
     }
-    
+   
+    .contacto{
+        width: 100%;
+        height: 50%;
+    }
+    .contacto-form input{
+        display: flex;
+        font-size: 18px;
+        margin-left: 40%;
+        padding: 12px 0;
+        margin-bottom: 20px;
+        border: solid;
+        text-decoration: none;  
+    }
+    .social>ul{
+        display: inline-flex;
+        justify-content: center;
+        margin-left: 40%;
+    }
+    #contacto-button{
+        margin-left: 25%;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Inter';
+        border-bottom-style: none;
+        padding: 5px;
+        width: 50%;
+        height: 45%;   
+    }
+    #contacto-button :hover{
+        text-decoration: underline;
+        background-color: aquamarine;
+    }
+    iframe{
+        margin-left: 30%;
+    }
+    /*Elaboracion*/
+  
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .menu-card1{ 
+        text-align: center;
+        width: 30%;
+        height: "auto";
+    }
 }
 @media (max-width:768px){
-    .news-cards{
+    header{
+        height: 50%;
+    }
+    .navi{
+        margin-bottom: 20px;
+    }
+    .navi>ul{
+        display: inherit;
+    }
+    
+    .productos-grid{
         grid-template-columns: repeat(2, 1fr);
         margin: 0;
         padding: 0;
     }
+    .social>ul{
+        display: inline-flex;
+        justify-content: center;
+        margin-left: 35%;
+    }
+    /*Elaboracion*/
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .menu-card1{ 
+        text-align: center;
+        width: 50%;
+        height: 50%;
+    }
+    .contacto{
+        width: 100%;
+        height: 50%;
+    }
+    iframe{
+        text-align: center;
+        width: 100%;
+        height: "auto";
+        margin: 2px;
+        margin-left: 45px;
+    }
+    
 }
 @media (max-width:480px){
-    .news-cards{
+    header{
+        width: 100%;
+    }
+    .navi{
+        font-size: 70%;
+
+    }
+    .logo{
+        text-align: center;
+        width: 50%;
+        height: 50%;
+        margin-left: 23%;
+    }
+    .navi>ul>li{
+        display: inherit;
+    }
+     /*Elaboracion*/
+    .titulo{
+        text-align: center;
+        font-size: 90%;
+        margin: 10px;    
+     }
+    .productos-grid{
         grid-template-columns: repeat(1, 1fr);
-        margin: 0;
-        padding: 0;
+        margin: 10%;
+        margin-bottom: 8%;
+        gap: 1.5em;
+        justify-content: space-evenly;
+        
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .menu-card1{ 
+        text-align: center;
+        width: 70%;
+        height: "auto";
+    }
+    .contacto{
+        width: 100%;
+        height: 50%;
+    }
+    .contacto-form input{
+        display: flex;
+        font-size: 12px;
+        margin-left: 33%;
+        padding: 12px 0;
+        margin-bottom: 20px;
+        border: solid;
+        text-decoration: none;  
+    }
+    #contacto-button{
+        margin-left: 25%;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Inter';
+        border-bottom-style: none;
+        padding: 5px;
+        width: 50%;
+        height: 45%;   
+    }
+    #contacto-button :hover{
+        text-decoration: underline;
+        background-color: aquamarine;
+    }
+    .reseña-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reseña{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    iframe{
+        text-align: center;
+        width: 100%;
+        height: "auto";
+        margin: 2px;
+        margin-left: 5px;
+    }
+    .social>ul{
+        display: inline-flex;
+        justify-content: center;
+        margin-left: 20%;
     }
     
 }

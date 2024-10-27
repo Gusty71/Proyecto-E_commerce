@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+      <img src="./imagenes/logonegocio.jpg" class="logo" alt="logo comercial">
       <nav class="navi">
           <ul>
               <li>
@@ -23,13 +24,12 @@
                   <a href="contacto.html">Contacto</a>
               </li>
           </ul>    
-          <img src="./imagenes/logonegocio.jpg" class="logo" alt="">
       </nav>
     </header>
     <main class="contacto">
        <h1>Contactos</h1>
       <div class="contacto-form">
-        <form action="" method="post">
+        <form action="https://formspree.io/f/xnnqqoel" method="post">
           <fieldset>
             <legend>Datos Personales</legend>
               <label for="nombre">Nombres</label>
@@ -45,30 +45,73 @@
           </fieldset>
           <div class="comentar">
             <p>Comentarios</p>
-            <textarea name="text" id="comentarios" cols="30" rows="10" placeholder="Escriba aqui el texto"></textarea>
+            <textarea name="text" id="comentarios" cols="35" rows="10" placeholder="Escriba aqui el texto"></textarea>
           </div>
-          <div>
-            <button type="submit" class="button" >Enviar</button>
-          </div>
+          <div id="contacto-button">
+            <button type="submit" class="contacto-button" >Enviar</button>
+        </div>       
         </form>
+      
       </div>
+      <section class="reseña-grid">
+        <h2>Reseñas de nuestros comensales</h2>
+        <div class="reseña">
+          <div class="reseña-1">
+            <h3>Muy Recomendado</h3>
+            <p>
+              Dijo: <br> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nihil rem aut iste tempore repudiandae harum, 
+              neque pariatur asperiores voluptatibus sit.
+              <br>
+              <br> Jose Perez 
+
+            </p>
+          </div>
+          <div class="reseña-2">
+            <h3>Excelente atenciòn</h3>
+            <p>
+              Dijo: <br> 
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique delectus dolor excepturi perferendis facilis aut,
+              provident illum asperiores obcaecati vero. <br>
+              <br>  Marcos Castro
+            </p>
+          </div>
+          <div class="reseña-3">
+            <h3>Super especiales</h3>
+            <p>
+              Dijo: <br> 
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium obcaecati vitae
+              officiis dolorem voluptatum eos eaque ut facilis tempora culpa. <br>
+              <br>    Laura Ponce
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.101714016255!2d-64.7963809221983!3d-23.814981864700897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941ac1c3b453bfc9%3A0x920ac25e256a4bc5!2sMister%20Sabor!5e0!3m2!1ses-419!2sar!4v1727305310142!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot"</script>
 </body>
 <footer>
   <div class="social"> 
     <h4>Encontranos en las redes sociales:</h4>
     <ul>
       <li>
-          <a href="https:\\www.whatsapp.com"><img src="./imagenes/whatsapp.png" 
+          <a href="https:\\www.whatsapp.com">
+            <img src="./imagenes/whatsapp.png" 
             width="50" height="auto"></a>
       </li>
       <li>
-          <a href="https:\\www.facebook.com"><img src="./imagenes/facebook.png" 
+          <a href="https:\\www.facebook.com">
+            <img src="./imagenes/facebook.png" 
             width="50" height="auto"></a>
       </li>
       <li>
-          <a href="https:\\linkedin.com"><img src="./imagenes/linkedin.png"
+          <a href="https:\\linkedin.com">
+            <img src="./imagenes/linkedin.png"
             width="50" height="auto"></a>
       </li>
   </ul> 
