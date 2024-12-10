@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-ul, ol{
+    text-decoration: none;
     list-style: none;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
 }
 
 header{
@@ -14,22 +19,17 @@ header{
 
 .navi>ul>li{
     display: inline-flex;
-    margin:0 5px;
+    margin-top: -10px;
 }
 
 .navi>ul>li>a{    
     color: white;
     font-size: 28px;
-    font-family: 'Inter';  
     background-color:blue;
-    margin: 2px;
-    margin-bottom: 1px;
-    margin-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius:10px;
-    text-decoration: none;  
+    border-bottom-right-radius:10px; 
 }
 
 .logo{
@@ -41,7 +41,6 @@ header{
     margin-left: 37%;
     margin-top: 10px;
     align-items: center;
-    text-decoration: none;
 }
 
 .container{
@@ -60,13 +59,12 @@ header{
 }
 .container>h1{
     text-align: center;
-    font-family: 'Inter';
+    font-weight: 700;
     font-size: 34px;
-    margin: 2px;
+    margin: 0;
 }
 .container p{
     text-align: center;
-    font-family: 'Inter';
     font-size: 24px;
     
 }
@@ -75,7 +73,7 @@ header{
     display: block;
     justify-content: center;
     font-size: 28px;
-    font-family: 'Inter';
+    font-weight: 400;
     text-align:center ;
     margin:0 8px 0 5px;
     padding: 10px;
@@ -84,7 +82,6 @@ header{
 .atencion>h3{
     text-align: center;
     font-size: 32px;
-    font-family: 'Inter';
     background-color: #ffc300;
 }
 .atencion table{
@@ -94,13 +91,12 @@ header{
     text-align: center;
     padding: 10px;
     font-size: 22px;
-    font-family: 'Inter';
 }
 
 .social>h4{
     text-align: center;
     font-size: 20px;
-    font-family: 'Inter';
+    font-weight: 600;
     
 }
 .social>ul{
@@ -117,7 +113,6 @@ header{
 
 .social>p{
     font-size: 18px;
-    font-family: 'Inter';
     text-align: center;
 }
 /*ELABORACION*/
@@ -127,12 +122,13 @@ main{
 .titulo{
    text-align: center;
    font-size: 32px;
-   margin: 10px;
+   margin: 0;
     
 }
 .productos-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));   
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+    gap: 10px; 
 }
 
 .producto-item{
@@ -153,22 +149,22 @@ main{
 }
 .producto-item-1{
     width: 330px;
-    height: 450px;
+    height: 400px;
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
 }
 .producto-item-2{
     width: 330px;
-    height: 450px;
+    height: 400px;
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
@@ -176,11 +172,11 @@ main{
 }
 .producto-item-3{
     width: 330px;
-    height: 450px;
+    height: 400px;
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
@@ -188,11 +184,11 @@ main{
 }
 .producto-item-4{
     width: 330px;
-    height: 450px;
+    height: 400px;
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
@@ -201,34 +197,30 @@ main{
 .producto-item-5{
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
     width: 330px;
     height: 250px;
-
 }
 .producto-item-6{
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
     width: 330px;
     height: 250px;
-
-
-
 }
 .producto-item-7{
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
@@ -239,14 +231,13 @@ main{
 .producto-item-8{
     background-color: antiquewhite;
     text-align: center;
-    font-size: 18px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     border: solid;
     gap: 0.5em;
     margin: 2px;
     width: 330px;
     height: 250px;
-
 }
 .precio-item span{
     display: inline-flex;
@@ -254,28 +245,26 @@ main{
     font-size: 22px;
     margin-top: 10px;
     font-weight: bold;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 .cta-item>a{
     text-align:right;
-    margin-left: 200px;
+    margin-left: 180px;
     justify-content:space-evenly;
-    font-size: 20px;
-    font-family: 'Inter';
+    font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
-   
+    padding: 5px;
 }
 .cta-item :hover{
     text-decoration: underline;
     background-color:goldenrod;
 }
 
-/* MENU*/
+/* MENU */
 .menu{
     display: grid;
-    grid-template-columns: repeat(minmax(4, 1fr));        
+    grid-template-columns: repeat(minmax(300px, 1fr));  
+          
 }
 .titulo-menu{
     text-align: center;
@@ -287,7 +276,6 @@ main{
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
-    text-decoration: none;
     margin-top: 30px;
     gap: 0.5em;
     justify-content: space-evenly;
@@ -303,8 +291,8 @@ main{
     text-align: center;
     width: 300px;
     height: 400px;
-    font-size: 24px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
     border: solid;
     background-color: white ;
 }
@@ -312,109 +300,95 @@ main{
 .menu-lista>li{
     text-align: center;
     font-size: 20px;
-    margin: 10px;
+    margin: 2px;
     color: black;
-    text-decoration: none;
 }
 .menu-lista2>li{
     text-align: center;
     font-size: 15px;
-    margin: 5px;
     color:green;
-    text-decoration: none;
 }
 
 .menu-card2{
     text-align: center;
     width: 300px;
     height: 400px;
-    font-size: 24px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     border: solid;
-    text-decoration: none;
     background-color: white ;
 }    
 .menu-card3{
     text-align: center;
     width: 300px;
     height: 400px;
-    font-size: 24px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     border: solid;
-    text-decoration: none;
     background-color: white ;   
 }
 .menu-card4{
     text-align: center;
     width: 300px;
     height: 400px;
-    font-size: 24px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     border: solid;
-    text-decoration: none;
     background-color: white ;
 }
 /*CONTACO*/
-.contacto{
-  
+.formu{ 
     display: grid;
     background-image:url(../imagenes/foto_misterSabor.jpg) ;
 }
 
-main>h1{
+main h1{
     text-align:center;
     font-size: 38px;
-    font-family: 'Inter';
     margin-bottom: 30px;
-    text-decoration: none;   
 } 
 
-.contacto-form{
+.form{
     display: block;
     text-align: center;
     font-size: 24px;
-    font-family: 'Inter';
-    text-decoration: none;
-}   
+} 
 
-legend{
-    font-size:26px;
-    font-family: 'Inter';
-    text-align: center; 
-}
-
-.contacto-form input{
+.enter{
     display: flex;
     font-size: 18px;
     margin-left: 550px;
     padding: 12px 0;
     margin-bottom: 20px;
-    border: solid;
-    text-decoration: none;  
+    border: solid; 
 }
 
-.comentar>p{
+.texto{
+    text-align: center;
+    font-size: 20px;
+}
+
+.comentar p{
+    text-align: center;
     font-size: 28px;
     color: black;
     margin: 10px;
 }
 
-.comentar>textarea{
-    margin: 20px;
+.comentar, textarea{
+    margin: 20px 200px 20px 220px;
     border: none;
+    font-size: 18px;
 }
-#contacto-button{
-    margin-left: 45%;
+.button{
+    
+    margin-left: 550px;
     margin-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Inter';
+    font-size: 24px;
     border-bottom-style: none;
     padding: 5px;
     width: 150px;
-    height: 40px;   
+    height: 30px;   
 }
 
-#contacto-button :hover{
+.button:hover{
     text-decoration: underline;
     background-color:aquamarine;
 }
@@ -503,10 +477,11 @@ iframe{
     }
     .navi{
         font-size: 70%;
-
     }
+
     .productos-grid{
-        grid-template-columns: repeat(minmax(280px, 1fr));
+       /* grid-template-columns: repeat(minmax(280px, 1fr));*/
+       grid-template-columns: repeat(3, 1fr);
         margin: 0;
         padding: 0;
         gap: 0.1em;
@@ -551,12 +526,11 @@ iframe{
   
     .menu{
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
     }
     .menu-card1{ 
         text-align: center;
-       /* width: 30%;
-        height: "auto";*/
+        width: 50%;
     }
 }
 @media (max-width:768px){
@@ -584,6 +558,7 @@ iframe{
     .menu{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
+        justify-content: space-between;
     }
     .menu-card1{ 
         text-align: center;
