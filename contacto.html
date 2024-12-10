@@ -10,49 +10,39 @@
     
 </head>
 <body>
-    <header>
-      <img src="./imagenes/logonegocio.jpg" class="logo" alt="logo comercial">
-      <nav class="navi">
-          <ul>
-              <li>
-                  <a href="index.html">Nosotros</a>
-              </li>
-              <li>
-                  <a href="elaboracion.html">Productos</a>
-              </li>
-              <li>
-                  <a href="contacto.html">Contacto</a>
-              </li>
-          </ul>    
-      </nav>
-    </header>
-    <main class="contacto">
-       <h1>Contactos</h1>
-      <div class="contacto-form">
-        <form action="https://formspree.io/f/xnnqqoel" method="post">
-          <fieldset>
-            <legend>Datos Personales</legend>
-              <label for="nombre">Nombres</label>
-              <input type="text" name="nombre" placeholder="Nombres" required>
-              <label for="apellido">Apellido</label>
-              <input type="text" name="apellido" placeholder="Apellido" required>
-              <label for="telefono">Telefono</label>
-              <input type="text" name="telefono"  placeholder="Telefono">
-              <label for="correoElectronico">Correo E.</label>
-              <input type="email" name="correoElectronico" placeholder="Escribe tu email" required> 
-              <label for="contraseña">Contraseña</label>
-              <input type="password" name="contraseña" placeholder="Contraseña" required>    
-          </fieldset>
-          <div class="comentar">
-            <p>Comentarios</p>
-            <textarea name="text" id="comentarios" cols="35" rows="10" placeholder="Escriba aqui el texto"></textarea>
-          </div>
-          <div id="contacto-button">
-            <button type="submit" class="contacto-button" >Enviar</button>
-        </div>       
+  <header></header>
+    <main class="formu">
+        <form action="https://formspree.io/f/xnnqqoel" method="post" onsubmit="return validar();">
+            <h1>Formulario de Contacto</h1>
+            
+            <label class="form" for="usuario">usuario:</label>
+            <input class="enter" type="text" name="usuario" id="usuario" placeholder="Nombre y Apellido">
+            <div class="texto" id="validar_usuario" style="color:red"></div>
+            <br><br>
+
+            <label class="form" for="password">clave:</label>
+            <input class="enter" type="password" name="password" id="clave" placeholder="Contraseña">
+            <div class="texto" id="validar_clave" style="color:red"></div>
+            <br><br>
+
+            <label class="form" for="telefono">telefono:</label>
+            <input class="enter" type="text" name="telefono" id="telefono" placeholder="telefono">
+            <div class="texto" id="validar_telefono" style="color:red"></div>
+            <br>
+
+            <label class="form" for="email">Email:</label>
+            <input class="enter" type="email" name="email" id="email" placeholder="Email">
+            <div class="texto" id="validar_email" style="color:red"></div>
+
+            <div class="comentar">
+              <p>Comentarios</p>
+              <textarea name="text" id="comentarios" 
+              cols="35" rows="10" placeholder="Escriba aqui el texto"></textarea>
+            </div>
+
+            <input class="button" id="but" type="submit" value="enviar">
         </form>
-      
-      </div>
+    </main>      
       <section class="reseña-grid">
         <h2>Reseñas de nuestros comensales</h2>
         <div class="reseña">
@@ -89,33 +79,13 @@
               <br>    Laura Ponce
             </p>
           </div>
-        </div>
       </section>
-    </main>
+    
+   
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.101714016255!2d-64.7963809221983!3d-23.814981864700897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941ac1c3b453bfc9%3A0x920ac25e256a4bc5!2sMister%20Sabor!5e0!3m2!1ses-419!2sar!4v1727305310142!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <script>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot"</script>
 </body>
-<footer>
-  <div class="social"> 
-    <h4>Encontranos en las redes sociales:</h4>
-    <ul>
-      <li>
-          <a href="https:\\www.whatsapp.com">
-            <img src="./imagenes/whatsapp.png" 
-            width="50" height="auto"></a>
-      </li>
-      <li>
-          <a href="https:\\www.facebook.com">
-            <img src="./imagenes/facebook.png" 
-            width="50" height="auto"></a>
-      </li>
-      <li>
-          <a href="https:\\linkedin.com">
-            <img src="./imagenes/linkedin.png"
-            width="50" height="auto"></a>
-      </li>
-  </ul> 
-  <p>Realizado por Tolay Norberto</p>
-</div>
-</footer>
+<footer></footer>
+<script src="./js/DOM.js"></script>
+<script src="./js/main.js"></script>
 </html>
