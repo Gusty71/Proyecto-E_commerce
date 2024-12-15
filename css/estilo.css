@@ -243,7 +243,6 @@ main{
     display: inline-flex;
     margin-right: 250px;
     font-size: 22px;
-    margin-top: 10px;
     font-weight: bold;
     justify-content: space-between;   
 }
@@ -253,7 +252,7 @@ main{
     justify-content:space-evenly;
     font-size: 18px;
     font-weight: bold;
-    padding: 5px;
+    padding: 3px;
 }
 .cta-item :hover{
     text-decoration: underline;
@@ -549,6 +548,9 @@ iframe{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
     }
+    .menu-lista{
+        font-size: 16px;
+    }
     
 }
 @media (max-width:768px){
@@ -582,6 +584,10 @@ iframe{
     .menu-card{ 
         text-align: center;
         justify-content: space-evenly;
+    }
+    .menu-lista{
+        font-family: 15px;
+
     }
 
     /* CONTACTO */
@@ -678,6 +684,10 @@ iframe{
     .menu{
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
+    }
+    .menu-lista>ul>ol{
+        font-size: 14px;
+        margin: 1px;
     }
     /*CONTACTO*/
     .formu{
