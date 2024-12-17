@@ -11,7 +11,7 @@ fetch('productos.json')
         <h3>"${producto.nombre}"</h3>
         <img src="${producto.imagen}" alt="${producto.imagen}" width="300">
         <p>Descripcion:"${producto.Descripcion}"</p>
-        <p>Precio: "$${producto.precio}"</p>
+        <p>Precio: $${producto.precio}</p>
         <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
         `;
         productoDiv.appendChild(div);

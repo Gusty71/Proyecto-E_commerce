@@ -3,7 +3,7 @@
     "nombre": "Pasta Caseras",
     "imagen": "./imagenes/platoCaliente.jpg",
     "Descripcion":"Las mejores y mas ricas pastas.",
-    "precio": 100
+    "precio": 3000.00
         
     },
     {   
@@ -19,13 +19,13 @@
         "nombre": "Salchipapas",
         "imagen": "./imagenes/salchiPapa.png",
         "Descripcion":"Salchcichas al plato con papas Fritas.",
-        "precio": 100
+        "precio": 1800.00
     },
     {    "id":4,
         "nombre": "Platos Regionales",
         "imagen": "./imagenes/tamales.jpg",
         "Descripcion":"Tamales de cerdo o vacunos.",
-        "precio": 100
+        "precio": 1000.00
      
     },
     {   
