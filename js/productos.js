@@ -8,10 +8,10 @@ fetch('productos.json')
         const div = document.createElement('div');
 
         div.innerHTML = `
-        <h3>${producto.nombre}</h3>
-        <img src="./imagenes/${producto.imagen} alt=${producto.imagen} width=200">
-        <p>Descripcion: ${producto.descripcion}</p>
-        <p>Precio: $${producto.precio}</p>
+        <h3>"${producto.nombre}"</h3>
+        <img src="${producto.imagen}" alt="${producto.imagen}" width="300">
+        <p>Descripcion:"${producto.Descripcion}"</p>
+        <p>Precio: "$${producto.precio}"</p>
         <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
         `;
         productoDiv.appendChild(div);

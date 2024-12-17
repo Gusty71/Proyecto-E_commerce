@@ -14,13 +14,13 @@ function mostrarCarrito(){
         const div = document.createElement('div');
         div.innerHTML = `
         <div data=${item.id}>
-        <h4>Producto: ${item.nombre}</h4>
-        <p>Precio: $${item.precio}</p>
+        <h4>Producto: "${item.nombre}"</h4>
+        <p>Precio:" $${item.precio}"</p>
         <p>Cantidad:
         <button onclick="decrementarCantidad(${item.id})">-</button>
         <span>${item.cantidad}</span>
         <button onclick="incrementarCantidad(${item.id})">+</button>
-        <p>Total: $${(item.precio * item.cantidad).toFixed(2)}</p>
+        <p>Total:" $${(item.precio * item.cantidad).toFixed(2)}"</p>
         </p>
         <button onclick="eliminarProducto(${item.id})">Eliminar</button>      
         </div>

@@ -1,63 +1,64 @@
 [
-    {   
-        "id": 1,
-        "nombre": "Hamburguesas",
-       "imagen": "./imagenes/hamburguesas.png",
-       "Descripcion":"En Sandwich o plato.",
-        "precio": 1500.00
+    {     "id":1,
+    "nombre": "Pasta Caseras",
+    "imagen": "./imagenes/platoCaliente.jpg",
+    "Descripcion":"Las mejores y mas ricas pastas.",
+    "precio": 100
         
     },
     {   
         "id":2,
-        "nombre": "Pizza",
-        "imagen": "./imagenes/pizzas.jpg",
-        "Descripcion":"De muzzarella y morrones.",
+        "nombre": "Pizzas",
+        "imagen": "./imagenes/pizza2.jpg",
+        "Descripcion":"La mejor pizzas napolitanas.",
         "precio": 1300.00
         
     },
     {   
         "id":3,
         "nombre": "Salchipapas",
-        "imagen": "./imagenes/silchaPapa.png",
+        "imagen": "./imagenes/salchiPapa.png",
         "Descripcion":"Salchcichas al plato con papas Fritas.",
         "precio": 100
     },
-    {   
-        "id":4,
-        "nombre": "Sandwich de Migas",
-        "imagen": "./imagenes/sandwichFrio.png",
-        "Descripcion":"Sandwich de Verduras y fiambres.",
-        "precio": 1000.00
+    {    "id":4,
+        "nombre": "Platos Regionales",
+        "imagen": "./imagenes/tamales.jpg",
+        "Descripcion":"Tamales de cerdo o vacunos.",
+        "precio": 100
+     
     },
     {   
         "id": 5,
-        "nombre": "Hamburguesas",
-       "imagen": "./imagenes/hamburguesas.png",
+        "nombre": "Milanesas al Plato",
+       "imagen": "./imagenes/milaPapa.jpg",
        "Descripcion":"En Sandwich o plato.",
         "precio": 1500.00
         
     },
     {   
         "id":6,
-        "nombre": "Pizza",
-        "imagen": "imagenes/hamburguesas.png",
+        "nombre": "Pizzas",
+        "imagen": "./imagenes/pizza3.jpg",
         "Descripcion":"De muzzarella y morrones.",
         "precio": 1300.00
         
     },
-    {   
-        "id":7,
-        "nombre": "Salchipapas",
-        "imagen": "./imagenes/silchaPapa.png",
-        "Descripcion":"Salchcichas al plato con papas Fritas.",
-        "precio": 100
+    {  
+        "id": 7,
+        "nombre": "Hamburguesas",
+       "imagen": "./imagenes/hamburguesas.png",
+       "Descripcion":"En Sandwich o plato.",
+        "precio": 1500.00 
+      
     },
     {   
         "id":8,
         "nombre": "Sandwich de Migas",
         "imagen": "./imagenes/sandwichFrio.png",
         "Descripcion":"Sandwich de Verduras y fiambres.",
-        "precio": 100
+        "precio": 1000.00
+       
     }
 
 ]
