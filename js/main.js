@@ -10,7 +10,7 @@ function validar(){
     document.getElementById("validar_email").innerHTML = "";
 
     if(usuario.value ===""){
-        document.getElementById("validar_usuario").innerHTML="Debe completar este campo";
+        document.getElementById("validar_usuario").innerHTML="Completar con su nombre";
         error=true;
         usuario.focus();
     }

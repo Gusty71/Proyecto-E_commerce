@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     mostrarCarrito();
 
     document.getElementById('vaciarCarrito').addEventListener('click', vaciarCarrito);
@@ -9,35 +10,34 @@ function mostrarCarrito(){
     const carritoDiv = document.getElementById('carrito');
     carritoDiv.innerHTML = '';
 
-    carrito.forEach(item => {
-        
+    carrito.forEach(item => {   
         const div = document.createElement('div');
+    
         div.innerHTML = `
-        <div data=${item.id}>
-        <h4>Producto: "${item.nombre}"</h4>
-        <p>Precio:" $${item.precio}"</p>
+        <p>ID: ${item.id}</p>
+        <h4>Nombre: "${item.nombre}"</h4>
+        <p>Precio:$ ${item.precio}</p>
         <p>Cantidad:
         <button onclick="decrementarCantidad(${item.id})">-</button>
         <span>${item.cantidad}</span>
         <button onclick="incrementarCantidad(${item.id})">+</button>
-        <p>Total:" $${(item.precio * item.cantidad).toFixed(2)}"</p>
+        <p>SubTotal:" $${(item.precio * item.cantidad).toFixed(2)}"</p>
         </p>
         <button onclick="eliminarProducto(${item.id})">Eliminar</button>      
-        </div>
-
         <button Onclick="vaciarCarrito(${item.id})">Vaciar Carrito</button>
         
         `;
         carritoDiv.appendChild(div);
+        
     });
+    console.log(carrito);
 }
 
 function incrementarCantidad(id){
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const encontrado =carrito.find(item => item.id === id);
     if (encontrado){
-        encontrado.cantidad++;
-        
+        encontrado.cantidad++;   
         localStorage.setItem('carrito', JSON.stringify(carrito));
     }
     mostrarCarrito();
@@ -56,7 +56,7 @@ function decrementarCantidad(id){
         }
     }
     mostrarCarrito();
-}
+};
 
 function eliminarProducto(id){
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
